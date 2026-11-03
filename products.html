@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Ruixu Foreign Trading</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="products">
+    <div id="app">
+      <main>
+        <section class="hero hero--short hero--overlay" data-bg="heroProducts">
+          <div class="hero__overlay">
+            <div class="hero__inner">
+              <p class="hero__eyebrow">WHOLESALE · 2026</p>
+              <h1 class="hero__title">Products</h1>
+              <p class="hero__subtitle">Women's · Hoodies · Denim · Knits — mixed orders & dropshipping</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="strip">
+          Sample best-selling directions below. Stock and pricing confirmed by sales. Ships nationwide across China—e-commerce, live commerce & retail welcome.
+        </div>
+
+        <section class="section">
+          <div class="section__inner">
+            <span class="section__eyebrow">CATALOG</span>
+            <div class="section-head">
+              <div>
+                <h2 class="section__title" style="margin-bottom: 4px; text-align: left">Full Range</h2>
+                <p class="section__subtitle" style="margin: 0"><span id="product-count"></span> active style directions</p>
+              </div>
+            </div>
+            <div class="product-catalog" id="product-catalog"></div>
+          </div>
+        </section>
+
+        <section class="section section--gray">
+          <div class="section__inner">
+            <h2 class="section__title">Display Inspiration</h2>
+            <p class="section__subtitle">Outfit ideas for hero images and short-video shoots</p>
+            <div class="product-row" id="product-gallery"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <h2 class="section__title">What We Offer</h2>
+            <div class="service-grid" id="product-services"></div>
+          </div>
+        </section>
+
+        <section class="section" style="padding: 0">
+          <div class="mission">
+            <div class="mission__image" data-bg="brandMission"></div>
+            <div class="mission__body">
+              <h2>Need a price list?</h2>
+              <p>Share your channel (marketplace, live, cross-border, or store) and estimated monthly volume—we'll send matching SKUs and wholesale pricing.</p>
+              <a class="btn" href="franchise.html">Request Quote</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/site-data.js"></script>
+    <script src="js/apply-images.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/products-page.js"></script>
+    <script>
+      document.getElementById("product-count").textContent = window.SITE.products.length;
+    </script>
+  </body>
+</html>
