@@ -16,6 +16,7 @@ window.SITE = {
     phoneDisplay: "+86 181-5971-5221",
     email: "xxu87050@gmail.com",
     hours: "Mon–Sat 9:00 AM – 6:00 PM (GMT+8)",
+    whatsapp: "8618159715221",
   },
   services: [
     { title: "Women's Wholesale", desc: "Korean, Western, and casual styles—mixed orders and small test batches welcome" },
@@ -34,6 +35,26 @@ window.SITE = {
     { title: "Photo Assets", desc: "Hero and detail shots for listings and short-video content" },
     { title: "MAP Support", desc: "Regional partners may request suggested retail pricing" },
     { title: "Repeat Orders", desc: "In-season replenishment and bestseller reorders to avoid stockouts" },
+  ],
+  partnershipLead:
+    "We work with overseas buyers who wholesale, distribute, and resell women's apparel—not retail franchise fees. You source from us at trade pricing and sell through your own stores, marketplaces, or B2B network.",
+  partnershipModels: [
+    {
+      title: "Wholesale resale",
+      desc: "Buy in bulk at wholesale prices and resell on Amazon, Shopify, eBay, Etsy, or your own site. Mixed SKUs and test quantities supported.",
+    },
+    {
+      title: "Distribution & dealership",
+      desc: "Stock inventory in your country or region and supply boutiques, marketplaces, or sub-dealers. We help with assortment planning and replenishment.",
+    },
+    {
+      title: "Agency cooperation",
+      desc: "Act as a regional agent: introduce Ruixu styles to local retailers, consolidate orders, and coordinate shipping and after-sales with our team.",
+    },
+    {
+      title: "Dropship resale",
+      desc: "List our products without holding stock—we pick, pack, and ship to your end customers. Ideal for online sellers testing new categories.",
+    },
   ],
   nav: [
     { href: "index.html", label: "Home", id: "home" },

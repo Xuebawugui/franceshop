@@ -14,8 +14,17 @@
             <div class="hero__inner">
               <p class="hero__eyebrow">PARTNER WITH US</p>
               <h1 class="hero__title">Partnership</h1>
-              <p class="hero__subtitle">Agency · Wholesale · Dropship · Cross-border supply</p>
+              <p class="hero__subtitle">Wholesale · Distribution · Resale · Dropship</p>
             </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__inner">
+            <span class="section__eyebrow">COOPERATION MODELS</span>
+            <h2 class="section__title">Distribution & Resale</h2>
+            <p class="section__subtitle" id="partnership-lead"></p>
+            <div class="service-grid" id="partnership-models"></div>
           </div>
         </section>
 
@@ -28,44 +37,13 @@
 
         <section class="section">
           <div class="section__inner franchise-layout">
-            <div class="form-section form-section--card">
-              <h2 class="section__title" style="text-align: left">Apply to Partner</h2>
-              <p class="form-lead">Fill in the form—we'll respond within 1–2 business days.</p>
-              <form id="join-form">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" required placeholder="Your name" />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input id="phone" name="phone" type="tel" required placeholder="Mobile or WhatsApp" />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="city">City</label>
-                    <input id="city" name="city" placeholder="e.g. Shanghai, Guangzhou" />
-                  </div>
-                  <div class="form-group">
-                    <label for="channel">Primary channel</label>
-                    <select id="channel" name="channel">
-                      <option value="">Select one</option>
-                      <option>Taobao / Tmall</option>
-                      <option>Douyin / Kuaishou live</option>
-                      <option>Pinduoduo / JD</option>
-                      <option>Cross-border e-commerce</option>
-                      <option>Physical store / market stall</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="message">Requirements</label>
-                  <textarea id="message" name="message" placeholder="Estimated monthly volume, categories, dropship needs, etc."></textarea>
-                </div>
-                <button class="btn btn--accent btn--block" type="submit">Submit</button>
-              </form>
+            <div class="form-section form-section--card contact-card">
+              <h2 class="section__title" style="text-align: left">Contact Us</h2>
+              <p class="form-lead">
+                No online form—message us on WhatsApp, email, or phone. We usually reply within 1–2 business days.
+              </p>
+              <div class="contact-actions" id="contact-actions"></div>
+              <p class="contact-hint">Please include your name, country, sales channel, and what you want to source.</p>
             </div>
             <aside class="franchise-aside">
               <h3>Ruixu Foreign Trading Co., Ltd.</h3>
@@ -80,26 +58,6 @@
     <script src="js/site-data.js"></script>
     <script src="js/apply-images.js"></script>
     <script src="js/layout.js"></script>
-    <script>
-      const { franchiseBenefits, intro, contact, location, legalName } = window.SITE;
-      document.getElementById("franchise-intro").textContent = intro;
-      document.getElementById("franchise-contact").innerHTML = `
-        <li><span>Company</span>${legalName}</li>
-        <li><span>Address</span>${location}</li>
-        <li><span>Phone</span><a href="tel:${contact.phone}">${contact.phoneDisplay || contact.phone}</a></li>
-        <li><span>Email</span><a href="mailto:${contact.email}">${contact.email}</a></li>
-        <li><span>Hours</span>${contact.hours}</li>`;
-      franchiseBenefits.forEach((b) => {
-        document.getElementById("franchise-benefits").insertAdjacentHTML(
-          "beforeend",
-          `<div class="service-card"><h3>${b.title}</h3><p>${b.desc}</p></div>`
-        );
-      });
-      document.getElementById("join-form").addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Thank you! The Ruixu sales team will contact you shortly.");
-        e.target.reset();
-      });
-    </script>
+    <script src="js/franchise-page.js"></script>
   </body>
 </html>

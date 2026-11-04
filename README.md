@@ -24,3 +24,4 @@ Open the URL shown (e.g. `http://localhost:3000`).
 
 - Copy and navigation: `js/site-data.js`
 - Images: `assets/images/` (Unsplash / Pexels)
+- Partner inquiries: WhatsApp, email, and phone on the **Partner** page (`js/site-data.js` → `contact`)

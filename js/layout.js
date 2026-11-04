@@ -4,6 +4,7 @@
     window.SITE;
   const year = new Date().getFullYear();
   const tel = contact.phone.replace(/\D/g, "");
+  const wa = (contact.whatsapp || tel).replace(/\D/g, "");
 
   function renderHeader() {
     const links = nav
@@ -19,7 +20,9 @@
           <div class="topbar__inner">
             <span class="topbar__company">${legalName}</span>
             <div class="topbar__links">
-              <a href="tel:${tel}">Sales ${contact.phoneDisplay || contact.phone}</a>
+              <a href="https://wa.me/${wa}" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <span class="topbar__sep" aria-hidden="true">|</span>
+              <a href="tel:${tel}">${contact.phoneDisplay || contact.phone}</a>
               <span class="topbar__sep" aria-hidden="true">|</span>
               <a href="mailto:${contact.email}">${contact.email}</a>
             </div>
