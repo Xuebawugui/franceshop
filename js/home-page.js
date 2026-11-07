@@ -2,7 +2,7 @@
   const { products, news, img, intro, motto, mission } = window.SITE;
 
   document.getElementById("home-intro").textContent = intro;
-  document.getElementById("home-motto").textContent = `Our promise: ${motto}.`;
+  document.getElementById("home-motto").textContent = `Notre engagement : ${motto}.`;
   document.getElementById("mission-text").textContent = mission;
 
   document.getElementById("feature-icon-fabric").src = img.iconFabric;
@@ -12,7 +12,7 @@
   products.slice(0, 4).forEach((p) => {
     row.insertAdjacentHTML(
       "beforeend",
-      `<a class="product-card" href="products.html"><img src="${p.image}" alt="${p.name}" loading="lazy" /><span class="product-card__label">${p.name}</span></a>`
+      `<a class="product-card" href="products.html"><img src="${p.image}" alt="${p.name}" loading="lazy" /><span class="product-card__label">${p.name}${p.price ? ` · ${p.price} €` : ""}</span></a>`
     );
   });
 
@@ -20,7 +20,7 @@
   img.gallery.forEach((src, i) => {
     apparel.insertAdjacentHTML(
       "beforeend",
-      `<div class="product-card"><img src="${src}" alt="Apparel look ${i + 1}" loading="lazy" /></div>`
+      `<div class="product-card"><img src="${src}" alt="Look vestimentaire ${i + 1}" loading="lazy" /></div>`
     );
   });
 

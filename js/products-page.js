@@ -9,8 +9,8 @@
         <div class="product-tile__img"><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>
         <div class="product-tile__body">
           <h3>${p.name}</h3>
-          ${p.price ? `<p class="product-tile__price">From ¥${p.price} wholesale</p>` : `<p class="product-tile__price">Price on request</p>`}
-          <p class="product-tile__hint">Mixed orders · Dropship OK</p>
+          ${p.price ? `<p class="product-tile__price">${p.price} €</p>` : `<p class="product-tile__price">Prix sur demande</p>`}
+          <p class="product-tile__hint">Disponible en boutique · WhatsApp pour réserver</p>
         </div>
       </article>`
     );
@@ -20,7 +20,7 @@
   img.gallery.forEach((src, i) => {
     gallery.insertAdjacentHTML(
       "beforeend",
-      `<div class="product-card"><img src="${src}" alt="Display ${i + 1}" loading="lazy" /></div>`
+      `<div class="product-card"><img src="${src}" alt="Présentation ${i + 1}" loading="lazy" /></div>`
     );
   });
 

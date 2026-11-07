@@ -1,27 +1,27 @@
-# Ruixu Foreign Trading (ruixutrading)
+# franceshop
 
-English static corporate site for women's export wholesale and dropshipping from China.
+Site vitrine statique **Grain de Malice** · marque **BAVOIL Eliott** (Belley, France).
 
 ## Pages
 
-| File | Section |
+| Fichier | Contenu |
 | --- | --- |
-| `index.html` | Home |
-| `products.html` | Products |
-| `brand.html` | Brand |
-| `news.html` | Fashion insights |
-| `franchise.html` | Partnership |
+| `index.html` | Accueil |
+| `products.html` | Produits (59–99 €) |
+| `brand.html` | Marque |
+| `news.html` | Actualités mode |
+| `franchise.html` | Contact & WhatsApp |
 
-## Local preview
+## Aperçu local
 
 ```powershell
 npx --yes serve .
 ```
 
-Open the URL shown (e.g. `http://localhost:3000`).
+Ouvrir l’URL affichée (ex. `http://localhost:3000`).
 
-## Content & assets
+## Contenu
 
-- Copy and navigation: `js/site-data.js`
-- Images: `assets/images/` (Unsplash / Pexels)
-- Partner inquiries: WhatsApp, email, and phone on the **Partner** page (`js/site-data.js` → `contact`)
+- Textes & navigation : `js/site-data.js`
+- Images : `assets/images/`
+- Contact : WhatsApp, e-mail et téléphone sur la page **Contact**
